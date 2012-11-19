@@ -1,8 +1,9 @@
 var http = require('http');
 var fs = require('fs');
 
+var counter = 0;
+
 function writeNumbers(res) {
-  var counter = 0;
   for(var i = 0; i < 100; i++) {
     counter++;
     res.write(counter.toString() + '\n');
